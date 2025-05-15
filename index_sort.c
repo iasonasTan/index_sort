@@ -33,7 +33,7 @@ static void init_maps(int* main_arr, int main_n,
 		} else if (curr<0) {
 			map_neg[abs(curr)]++;
 		} else {
-			map_zero++;
+			(*map_zero)++;
 		}
 	}
 }
@@ -76,7 +76,6 @@ void sort(int* arr, const int n) {
 }
 
 static void add(int* arr, int* idx_p, int v) {
-	printf("adding value %d to index %d\n", v, (*idx_p));
 	arr[(*idx_p)]=v;
 	(*idx_p)++;
 }

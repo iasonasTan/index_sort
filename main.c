@@ -6,7 +6,7 @@
 
 int main()
 {
-	const int N=20;
+    const int N=50;
 	int arr[N]={};
 	srand(time(NULL));
 	const int LIMIT=20;
@@ -14,6 +14,7 @@ int main()
 		arr[i]=(rand()%LIMIT*2)-LIMIT;
 	}
 
+    print_arr(arr, N);
 	sort(arr, N);
 	print_arr(arr, N);
 
